@@ -1,5 +1,18 @@
 import streamlit as st
 
+# Custom Streamlit style with dark theme
+st.markdown(
+    """
+    <style>
+    body {
+        color: white;
+        background-color: #1E1E1E;  /* Dark background color */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 def home():
     st.title("Home Page")
     st.sidebar.write("Sidebar content for Home Page")
