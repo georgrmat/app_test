@@ -7,7 +7,7 @@ def set_custom_style():
     style = """
     <style>
         body {
-            color: white;
+            color: black;
             background-color: #2E2E2E; /* Dark background color */
         }
         .st-cg {
