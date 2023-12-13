@@ -1,17 +1,32 @@
 import streamlit as st
 
-# Custom Streamlit style with dark theme
-st.markdown(
+def set_custom_style():
     """
+    Set custom dark theme using CSS.
+    """
+    style = """
     <style>
-    body {
-        color: white;
-        background-color: #1E1E1E;  /* Dark background color */
-    }
+        body {
+            color: white;
+            background-color: #2E2E2E; /* Dark background color */
+        }
+        .st-cg {
+            color: white !important;
+        }
+        .st-ei {
+            background-color: #2E2E2E !important;
+            color: white !important;
+        }
+        .css-hi9bvv {
+            background-color: #2E2E2E !important;
+            color: white !important;
+        }
+        .st-at {
+            color: white !important;
+        }
     </style>
-    """,
-    unsafe_allow_html=True
-)
+    """
+    st.markdown(style, unsafe_allow_html=True)
 
 def home():
     st.title("Home Page")
@@ -49,4 +64,5 @@ def main():
         page_two()
 
 if __name__ == "__main__":
+    set_custom_style()
     main()
