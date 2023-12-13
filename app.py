@@ -6,11 +6,15 @@ def home():
     st.write("Welcome to the Home Page!")
 
 def page_one():
-    st.title("Page 1")
-    st.sidebar.write("Sidebar content for Page 1")
-    num = st.sidebar.selectbox("choose", [1, 2, 3])
-    st.write(num)
-    st.write("This is Page 1.")
+    def test():
+        st.title("Page 1")
+        st.sidebar.write("Sidebar content for Page 1")
+        num = st.sidebar.selectbox("choose", [1, 2, 3])
+        st.write(num)
+        st.write("This is Page 1.")
+    launch = st.sidebar.button("test")
+    if launch:
+        test()
 
 def page_two():
     st.title("Page 2")
