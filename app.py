@@ -11,18 +11,18 @@ def set_custom_style():
             background-color: #2E2E2E; /* Dark background color */
         }
         .st-cg {
-            color: white !important;
+            color: black !important;
         }
         .st-ei {
             background-color: #2E2E2E !important;
-            color: white !important;
+            color: black !important;
         }
         .css-hi9bvv {
             background-color: #2E2E2E !important;
             color: white !important;
         }
         .st-at {
-            color: white !important;
+            color: black !important;
         }
     </style>
     """
