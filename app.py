@@ -1,34 +1,23 @@
 import streamlit as st
-import random
 
 def home():
     st.title("Home Page")
-    with st.sidebar:
-        st.write("Home Page Sidebar")
-        selected_page = st.selectbox("Select Page", ["Home", "Page 1", "Page 2"])
-        st.write(f"Selected Page: {selected_page}")
-
+    st.sidebar.write("Sidebar content for Home Page")
     st.write("Welcome to the Home Page!")
 
 def page_one():
     st.title("Page 1")
-    with st.sidebar:
-        st.write("Page 1 Sidebar")
-        selected_page = st.selectbox("Select Page", ["Home", "Page 1", "Page 2"])
-        st.write(f"Selected Page: {selected_page}")
-
+    st.sidebar.write("Sidebar content for Page 1")
+    num = st.sidebar.selectbox("choose", [1, 2, 3])
+    st.write(num)
     st.write("This is Page 1.")
-    st.write("Random Number in Page 1:", random.randint(1, 100))
 
 def page_two():
     st.title("Page 2")
-    with st.sidebar:
-        st.write("Page 2 Sidebar")
-        selected_page = st.selectbox("Select Page", ["Home", "Page 1", "Page 2"])
-        st.write(f"Selected Page: {selected_page}")
-
+    st.sidebar.write("Sidebar content for Page 2")
+    num = st.sidebar.selectbox("choose", [1, 2, 3])
+    st.write(num)
     st.write("You are now on Page 2.")
-    st.write("Random Number in Page 2:", random.randint(1, 100))
 
 def main():
     pages = ["Home", "Page 1", "Page 2"]
